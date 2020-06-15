@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <title>My calculator</title>
+</head>
+
+<body>
+  <div class="container calculator w-50">
+    <div class="row">
+      <div class="col border" id="display">0</div>
+      <button class="col-3" type="button" id="divide" onclick="divide()">÷</button>
+    </div>
+
+    <div class="row">
+      <button class="col-3" type="button" value="7" onclick="setInput(value)">7</button>
+      <button class="col-3" type="button" value="8" onclick="setInput(value)">8</button>
+      <button class="col-3" type="button" value="9" onclick="setInput(value)">9</button>
+      <button class="col-3" type="button" id="multiply" onclick="multiply()">&times;</button>
+    </div>
+
+    <div class="row">
+        <button class="col-3" type="button" value="4" onclick="setInput(value)">4</button>
+        <button class="col-3" type="button" value="5" onclick="setInput(value)">5</button>
+        <button class="col-3" type="button" value="6" onclick="setInput(value)">6</button>
+        <button class="col-3" type="button" id="subtract" onclick="substract()">-</button>
+
+    </div>
+
+    <div class="row">
+        <button class="col-3" type="button" value="1" onclick="setInput(value)">1</button>
+        <button class="col-3" type="button" value="2" onclick="setInput(value)">2</button>
+        <button class="col-3" type="button" value="3" onclick="setInput(value)">3</button>
+        <button class="col-3" id="add" onclick="add()" >+</button>
+
+    </div>
+
+    <div class="row">
+      <button class="col-3" id="clear"  type="button" onclick="clearDisplay()">C</button>
+      <button class="col-3" type="button" onclick="setInput(value)">0</button>
+      <div class="col-3"></div>
+      <button class="col-3" 
+        id="calculate" onclick="calculate()">=</button>
+    </div>
+  </div>
+</body>
+</html> 
