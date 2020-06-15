@@ -7,12 +7,12 @@ const setInput = value => {
     // if input1 is defined, then I want to store the second value in input2
     displayInput(value);
     if (input1) {
-       // if there is no operator, then add value to input 1
-       if (!operator) {
-         let twoDigitInput = input1.toString().concat(value)
-         input1 = Number(twoDigitInput);
-        console.log(typeof(input1));
-      }
+        // if there is no operator, then add value to input 1
+        if (!operator) {
+            let twoDigitInput = input1.toString().concat(value);
+            input1 = Number(twoDigitInput);
+            console.log(typeof(input1));
+        }
         input2 = Number(value);
     } else {
         input1 = Number(value);
