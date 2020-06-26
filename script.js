@@ -25,6 +25,10 @@ const displayInput = value => {
     document.getElementById("display").innerHTML = value;
 };
 
+const setOperator = value => {
+  operator = value;
+};
+
 // function to clear input and operator
 const clear = () => {
     input1 = undefined;
@@ -38,21 +42,16 @@ const clearDisplay = () => {
 
  // function for addition
 const add = (a, b) => {
-    operator = 'addition';
-    // let sum = a + b
-    // return sum
     return a + b;
 };
 
 //function for substraction 
 const substract = (a, b) => {
-    operator = 'substraction';
     return a - b;
 };
 
 //function for multiplication
 const multiply = (a, b) => {
-    operator = "multiplication";
     return a * b;
 }
 
@@ -62,7 +61,6 @@ const divide = (a, b) => {
     if (b == 0) {
         return document.getElementById("display").innerHTML ="do not divide by 0, dummy!";
     }
-    operator = "division";
     return a / b;
 }
 
@@ -90,7 +88,8 @@ const calculate = () => {
 };
 
 //TODO:
+// Refactoring
 // inspect substraction with a negative sum
-// allow input of 2 digit numbers
-// => use eval(), save the result as an array of strings.
+// allow input of 2 digit numbers: Not displayed yet.
+
 // display two digit numners in the display 

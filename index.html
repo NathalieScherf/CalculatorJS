@@ -12,21 +12,29 @@
   <div class="container calculator w-50">
     <div class="row">
       <div class="col border" id="display">0</div>
-      <button class="col-3" type="button" id="divide" onclick="divide()">÷</button>
+      <button class="col-3" type="button" id="divide" 
+      value="division"
+      onclick="setOperator(value)"
+      style="padding: 5px;"
+      >÷</button>
     </div>
 
     <div class="row">
       <button class="col-3" type="button" value="7" onclick="setInput(value)">7</button>
       <button class="col-3" type="button" value="8" onclick="setInput(value)">8</button>
       <button class="col-3" type="button" value="9" onclick="setInput(value)">9</button>
-      <button class="col-3" type="button" id="multiply" onclick="multiply()">&times;</button>
+      <button class="col-3" type="button" id="multiply" 
+      value="multiplication"
+      onclick="setOperator(value)">&times;</button>
     </div>
 
     <div class="row">
         <button class="col-3" type="button" value="4" onclick="setInput(value)">4</button>
         <button class="col-3" type="button" value="5" onclick="setInput(value)">5</button>
         <button class="col-3" type="button" value="6" onclick="setInput(value)">6</button>
-        <button class="col-3" type="button" id="subtract" onclick="substract()">-</button>
+        <button class="col-3" type="button" id="subtract" 
+        value="substraction"
+        onclick="setOperator(value)">-</button>
 
     </div>
 
@@ -34,7 +42,8 @@
         <button class="col-3" type="button" value="1" onclick="setInput(value)">1</button>
         <button class="col-3" type="button" value="2" onclick="setInput(value)">2</button>
         <button class="col-3" type="button" value="3" onclick="setInput(value)">3</button>
-        <button class="col-3" id="add" onclick="add()" >+</button>
+        <button class="col-3" id="add" value="addition" 
+        onclick="setOperator(value)">+</button>
 
     </div>
 
